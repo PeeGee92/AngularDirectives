@@ -3,5 +3,6 @@
 </button>
 <p *ngIf="showText">PeeGee Assignment 3</p>
 <p *ngFor="let click of btnClicks"
+   [ngStyle]="{backgroundColor: clicksCount >= 5 ? 'blue' : 'transparent'}"
    [ngClass]="{ MoreThanFive: clicksCount >= 5 }">{{click}}</p>
 

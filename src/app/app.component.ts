@@ -3,12 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styles: [`
-    .MoreThanFive {
-      background: blue;
-      color: white;
-    }
-  `]
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   showText = true;
